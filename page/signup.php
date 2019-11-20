@@ -11,8 +11,8 @@ require "../include/header.html";
           <div class="container">
             <div class="row">
               <div class="col-md-9 col-lg-8 mx-auto">
-                <h3 class="login-heading mb-4">Ingresasion</h3>
-                <form action="" method="get">
+                <h3 class="login-heading mb-4">Registrasion</h3>
+                <form action="./tools/add.php" method="post">
                   <div class="form-label-group">
                     <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                     <label for="inputEmail">tu.correo@usm.cl</label>
@@ -23,15 +23,15 @@ require "../include/header.html";
                     <label for="inputPassword">Contraseña</label>
                   </div>
 
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input name="save" type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Hacer la recordasion</label>
+                  <div class="form-label-group">
+                    <input name="pass2" type="password" id="inputPassword2" class="form-control" placeholder="Password" required>
+                    <label for="inputPassword2">Confirmar contraseña</label>
                   </div>
 
-                  <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Entrar</button>
+                  <button name="send" class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Crear cuenta</button>
 
                   <div class="text-center">
-                      <p class="small">¿No tienes cuenta? <a href="signup.php">Hacer la registrasion</a></p>
+                      <p class="small">¿Ya tienes cuenta? <a href="login.php">Hacer la ingresasion</a></p>
                   </div>
                 </form>
               </div>
