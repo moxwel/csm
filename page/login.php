@@ -11,7 +11,7 @@ require "../include/header.html";
           <div class="container">
             <div class="row">
               <div class="col-md-9 col-lg-8 mx-auto">
-                <h3 class="login-heading mb-4">Ingresasion</h3>
+                <h3 class="login-heading mb-4"><span class="mdi mdi-login"></span> Ingresasion</h3>
                 <form action="" method="get">
                   <div class="form-label-group">
                     <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
@@ -31,7 +31,7 @@ require "../include/header.html";
                   <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Entrar</button>
 
                   <div class="text-center">
-                      <p class="small">¿No tienes cuenta? <a href="signup.php">Hacer la registrasion</a></p>
+                    <p class="small">¿No tienes cuenta? <a href="signup.php">Hacer la registrasion</a></p>
                   </div>
                 </form>
               </div>

@@ -1,6 +1,7 @@
 <?php
 require "../include/db.php";
 require "../include/header.html";
+session_start();
 ?>
 
   <div class="container-fluid">
@@ -11,7 +12,18 @@ require "../include/header.html";
           <div class="container">
             <div class="row">
               <div class="col-md-9 col-lg-8 mx-auto">
-                <h3 class="login-heading mb-4">Registrasion</h3>
+
+                <?php if (isset($_SESSION['msg_type'])) {
+                  // Muestra un mensaje solo si se ha definido uno ?>
+                  <div class="alert alert-<?php echo $_SESSION['msg_type'] ?> alert-dismissible fade show" role="alert">
+                    <?php echo $_SESSION['msg'] ?>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                <?php unset($_SESSION['msg_type']); unset($_SESSION['msg']); } ?>
+
+                <h3 class="login-heading mb-4"><span class="mdi mdi-clipboard-account"></span> Registrasion</h3>
                 <form action="./tools/add.php" method="post">
                   <div class="form-label-group">
                     <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
@@ -31,7 +43,7 @@ require "../include/header.html";
                   <button name="send" class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Crear cuenta</button>
 
                   <div class="text-center">
-                      <p class="small">¿Ya tienes cuenta? <a href="login.php">Hacer la ingresasion</a></p>
+                    <p class="small">¿Ya tienes cuenta? <a href="login.php">Hacer la ingresasion</a></p>
                   </div>
                 </form>
               </div>
