@@ -4,6 +4,8 @@ require "../../include/db.php";
 require "../../include/tools.php";
 session_start();
 
+// La comprobacion de datos solo se hara si se ha enviado un
+// formulario desde la pagina correspondiente.
 if (isset($_POST['send'])) {
     $email = $_POST['email'];
     $pass = $_POST['pass'];
@@ -16,7 +18,7 @@ if (isset($_POST['send'])) {
         $res = mysqli_query($conn, $query);
 
         if ($res) {
-            ses_msg("success", "<span class='mdi mdi-check'></span> Cuenta registrada. <a href='login.php'>Haz la ingresasion</a>");
+            ses_msg("success", "<span class='mdi mdi-check'></span> Cuenta creada con exito.");
             header('Location: /csm/page/signup.php');
         } else {
             ses_msg("danger", "<span class='mdi mdi-alert'></span> Este correo ya esta registrado.");

@@ -14,7 +14,7 @@ session_start();
               <div class="col-md-9 col-lg-8 mx-auto">
 
                 <?php if (isset($_SESSION['msg_type'])) {
-                  // Muestra un mensaje solo si se ha definido uno ?>
+                  // Muestra un mensaje solo si se ha definido uno antes ?>
                   <div class="alert alert-<?php echo $_SESSION['msg_type'] ?> alert-dismissible fade show" role="alert">
                     <?php echo $_SESSION['msg'] ?>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -37,13 +37,13 @@ session_start();
 
                   <div class="form-label-group">
                     <input name="pass2" type="password" id="inputPassword2" class="form-control" placeholder="Password" required>
-                    <label for="inputPassword2">Confirmar contraseña</label>
+                    <label for="inputPassword2">Repetir contraseña</label>
                   </div>
 
                   <button name="send" class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Crear cuenta</button>
 
                   <div class="text-center">
-                    <p class="small">¿Ya tienes cuenta? <a href="login.php">Hacer la ingresasion</a></p>
+                    <p class="small">¿Ya tienes cuenta? <a href="login.php">Haz la ingresasion</a></p>
                   </div>
                 </form>
               </div>

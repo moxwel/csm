@@ -1,6 +1,7 @@
 <?php
 require "../include/db.php";
 require "../include/header.html";
+session_start();
 ?>
 
   <div class="container-fluid">
@@ -11,8 +12,19 @@ require "../include/header.html";
           <div class="container">
             <div class="row">
               <div class="col-md-9 col-lg-8 mx-auto">
+
+                <?php if (isset($_SESSION['msg_type'])) {
+                  // Muestra un mensaje solo si se ha definido uno antes ?>
+                  <div class="alert alert-<?php echo $_SESSION['msg_type'] ?> alert-dismissible fade show" role="alert">
+                    <?php echo $_SESSION['msg'] ?>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                <?php unset($_SESSION['msg_type']); unset($_SESSION['msg']); } ?>
+
                 <h3 class="login-heading mb-4"><span class="mdi mdi-login"></span> Ingresasion</h3>
-                <form action="" method="get">
+                <form action="./tools/log.php" method="post">
                   <div class="form-label-group">
                     <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                     <label for="inputEmail">tu.correo@usm.cl</label>
@@ -28,10 +40,10 @@ require "../include/header.html";
                     <label class="custom-control-label" for="customCheck1">Hacer la recordasion</label>
                   </div>
 
-                  <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Entrar</button>
+                  <button name="send" class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Entrar</button>
 
                   <div class="text-center">
-                    <p class="small">¿No tienes cuenta? <a href="signup.php">Hacer la registrasion</a></p>
+                    <p class="small">¿No tienes cuenta? <a href="signup.php">Haz la registrasion</a></p>
                   </div>
                 </form>
               </div>
