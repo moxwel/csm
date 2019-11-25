@@ -12,6 +12,13 @@ session_start();
           <div class="container">
             <div class="row">
               <div class="col-md-9 col-lg-8 mx-auto">
+                <center>
+                  <img class="img-fluid" src="../assets/logo.png" alt="logo">
+                </center>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
 
                 <?php if (isset($_SESSION['msg_type'])) {
                   // Muestra un mensaje solo si se ha definido uno antes ?>

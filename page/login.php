@@ -12,6 +12,13 @@ session_start();
           <div class="container">
             <div class="row">
               <div class="col-md-9 col-lg-8 mx-auto">
+                <center>
+                  <img class="img-fluid mr-md-3" src="../assets/logo.png" alt="logo">
+                </center>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
 
                 <?php if (isset($_SESSION['msg_type'])) {
                   // Muestra un mensaje solo si se ha definido uno antes ?>
@@ -33,6 +40,7 @@ session_start();
                   <div class="form-label-group">
                     <input name="pass" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
                     <label for="inputPassword">Contraseña</label>
+                    <p><a href="signup.php">Hice la olvidasion</a></p>
                   </div>
 
                   <div class="custom-control custom-checkbox mb-3">
