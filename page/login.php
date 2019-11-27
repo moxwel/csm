@@ -1,7 +1,7 @@
 <?php
+session_start();
 require "../include/db.php";
 require "../include/header.html";
-session_start();
 ?>
 
   <div class="container-fluid">
