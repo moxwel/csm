@@ -13,12 +13,14 @@ require "../include/header.html";
             <div class="row">
               <div class="col-md-9 col-lg-8 mx-auto">
                 <center>
-                  <img class="img-fluid" src="../assets/logo.png" alt="logo">
+                  <img class="img-fluid mr-md-3" src="../assets/logo.png" alt="logo">
                 </center>
               </div>
             </div>
             <div class="row">
               <div class="col-md-9 col-lg-8 mx-auto">
+
+                <h3 class="login-heading mb-4"><span class="mdi mdi-clipboard-account"></span> Registrasion</h3>
 
                 <?php if (isset($_SESSION['msg_type'])) {
                   // Muestra un mensaje solo si se ha definido uno antes ?>
@@ -30,7 +32,6 @@ require "../include/header.html";
                   </div>
                 <?php unset($_SESSION['msg_type']); unset($_SESSION['msg']); } ?>
 
-                <h3 class="login-heading mb-4"><span class="mdi mdi-clipboard-account"></span> Registrasion</h3>
                 <form action="./tools/add.php" method="post">
                   <div class="form-label-group">
                     <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
