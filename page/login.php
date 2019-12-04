@@ -1,66 +1,105 @@
 <?php
 session_start();
 require "../include/db.php";
-require "../include/header.html";
 ?>
 
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-      <div class="col-md-8 col-lg-6">
-        <div class="login d-flex align-items-center py-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-9 col-lg-8 mx-auto">
-                <center>
-                  <img class="img-fluid mr-md-3" src="../assets/logo.png" alt="logo">
-                </center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Document</title>
+
+  <!-- Bootstrap 4.4.1 CDN -->
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+
+  <!-- Material Design Icons CDN -->
+  <link rel='stylesheet' href='//cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css'>
+
+  <style>
+    html,body {
+      height: 100%;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Pagina completa -->
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <!-- Izquierda: Imagen de fondo -->
+      <div class="col-sm-3 col-md-5 col-lg d-none d-sm-block" style="background-image: url('https://vignette.wikia.nocookie.net/roleplayz/images/5/50/Wiki-background/revision/latest?cb=20190721170559'); background-position: center; background-size: cover;"></div>
+      <!-- Derecha: Zona de login -->
+      <div class="col-sm-9 col-md-7 col-lg align-self-center">
+        <div class="row">
+          <div class="col-sm-0 col-md-1 col-xl-2 d-none d-sm-block"></div>
+
+          <div class="col">
+            <h3><span class="mdi mdi-login"></span> Iniciar sesión</h3>
+            <br>
+
+            <?php if (isset($_SESSION['msg_type'])) {
+              // Muestra un mensaje solo si se ha definido uno antes ?>
+              <div class="alert alert-<?php echo $_SESSION['msg_type'] ?> alert-dismissible fade show" role="alert">
+                <?php echo $_SESSION['msg'] ?>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-9 col-lg-8 mx-auto">
+            <?php unset($_SESSION['msg_type']); unset($_SESSION['msg']); } ?>
 
-                <h3 class="login-heading mb-4"><span class="mdi mdi-login"></span> Ingresasion</h3>
+            <form action="./tools/log.php" method="post">
 
-                <?php if (isset($_SESSION['msg_type'])) {
-                  // Muestra un mensaje solo si se ha definido uno antes ?>
-                  <div class="alert alert-<?php echo $_SESSION['msg_type'] ?> alert-dismissible fade show" role="alert">
-                    <?php echo $_SESSION['msg'] ?>
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                <?php unset($_SESSION['msg_type']); unset($_SESSION['msg']); } ?>
+              <div class="form-group">
+                <input name="email" type="email" class="form-control" placeholder="nombre.apellido@usm.cl" required autofocus>
+              </div>
 
-                <form action="./tools/log.php" method="post">
-                  <div class="form-label-group">
-                    <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                    <label for="inputEmail">tu.correo@usm.cl</label>
-                  </div>
+              <div class="form-group">
+                <input name="pass" type="password" class="form-control" placeholder="Contraseña" required>
+                <p class="small"><a href="signup.php">Olvidé mi contraseña</a></p>
+              </div>
 
-                  <div class="form-label-group">
-                    <input name="pass" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                    <label for="inputPassword">Contraseña</label>
-                    <p><a href="signup.php">Hice la olvidasion</a></p>
-                  </div>
-
-                  <div class="custom-control custom-checkbox mb-3">
+              <div class="form-row">
+                <div class="form-group col align-self-center">
+                  <div class="custom-control custom-checkbox">
                     <input name="save" type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Hacer la recordasion</label>
+                    <label for="customCheck1" class="custom-control-label">Recordar sesión</label>
                   </div>
+                </div>
 
-                  <button name="send" class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Entrar</button>
-
-                  <div class="text-center">
-                    <p class="small">¿No tienes cuenta? <a href="signup.php">Haz la registrasion</a></p>
-                  </div>
-                </form>
+                <div class="form-group col">
+                  <button name="send" class="btn btn-primary btn-lg btn-block" type="submit">Entrar</button>
+                </div>
               </div>
-            </div>
+
+              <p class="small text-center">¿No tienes cuenta? <a href="signup.php">Regístrate</a></p>
+
+            </form>
           </div>
+
+          <div class="col-sm-0 col-md-1 col-xl-2 d-none d-sm-block"></div>
         </div>
       </div>
     </div>
   </div>
 
-<?php require "../include/footer.html" ?>
+  <!-- Pie de pagina -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-fluid" style="width: 100%;">
+        <center class="small" style="background-color: #007bff; color:white">
+          Calendario Santa Maria
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 4.4.1 Scripts -->
+  <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous'></script>
+  <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
+</body>
+</html>
