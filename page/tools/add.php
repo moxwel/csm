@@ -1,8 +1,7 @@
 <?php
 
-require "../../include/db.php";
-require "../../include/tools.php";
 session_start();
+require "../../include/db.php";
 
 // La comprobacion de datos solo se hara si se ha enviado un
 // formulario desde la pagina correspondiente.
