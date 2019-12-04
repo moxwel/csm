@@ -17,7 +17,7 @@ if (isset($_POST['send'])) {
         $res = mysqli_query($conn, $query);
 
         if ($res) {
-            ses_msg("success", "<span class='mdi mdi-check'></span> Cuenta creada con exito.<br>Inicia sesion a continuacion.");
+            ses_msg("success", "<span class='mdi mdi-check'></span> Cuenta creada con exito.");
             header('Location: /csm/page/login.php');
         } else {
             ses_msg("danger", "<span class='mdi mdi-alert'></span> Este correo ya esta registrado.");

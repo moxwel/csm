@@ -31,14 +31,18 @@ require "../include/db.php";
   <div class="container-fluid h-100">
     <div class="row h-100">
       <!-- Izquierda: Imagen de fondo -->
-      <div class="col-sm-3 col-md-5 col-lg d-none d-sm-block" style="background-image: url('https://vignette.wikia.nocookie.net/roleplayz/images/5/50/Wiki-background/revision/latest?cb=20190721170559'); background-position: center; background-size: cover;"></div>
+      <div class="col-sm-3 col-md-5 col-lg d-none d-sm-block" style="background-image: url('../assets/loginbg.jpg'); background-position: center; background-size: cover;"></div>
+
       <!-- Derecha: Zona de login -->
       <div class="col-sm-9 col-md-7 col-lg align-self-center">
         <div class="row">
+          <!-- Margen izquierdo -->
           <div class="col-sm-0 col-md-1 col-xl-2 d-none d-sm-block"></div>
 
+          <!-- Centro -->
           <div class="col">
-            <h3><span class="mdi mdi-login"></span> Iniciar sesión</h3>
+            <img class="img-fluid" src="../assets/logo.png" alt="logo">
+            <h3><span class="mdi mdi-login"></span> Inicia sesión</h3>
             <br>
 
             <?php if (isset($_SESSION['msg_type'])) {
@@ -52,14 +56,13 @@ require "../include/db.php";
             <?php unset($_SESSION['msg_type']); unset($_SESSION['msg']); } ?>
 
             <form action="./tools/log.php" method="post">
-
               <div class="form-group">
                 <input name="email" type="email" class="form-control" placeholder="nombre.apellido@usm.cl" required autofocus>
               </div>
 
               <div class="form-group">
                 <input name="pass" type="password" class="form-control" placeholder="Contraseña" required>
-                <p class="small"><a href="signup.php">Olvidé mi contraseña</a></p>
+                <p class="small"><a href="#">Olvidé mi contraseña</a></p>
               </div>
 
               <div class="form-row">
@@ -74,25 +77,15 @@ require "../include/db.php";
                   <button name="send" class="btn btn-primary btn-lg btn-block" type="submit">Entrar</button>
                 </div>
               </div>
-
-              <p class="small text-center">¿No tienes cuenta? <a href="signup.php">Regístrate</a></p>
-
             </form>
+
+            <hr>
+            <p class="small text-center">¿No tienes cuenta? <a href="signup.php">Regístrate</a></p>
           </div>
 
+          <!-- Margen derecho -->
           <div class="col-sm-0 col-md-1 col-xl-2 d-none d-sm-block"></div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Pie de pagina -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-fluid" style="width: 100%;">
-        <center class="small" style="background-color: #007bff; color:white">
-          Calendario Santa Maria
-        </center>
       </div>
     </div>
   </div>
