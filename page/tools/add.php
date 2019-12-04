@@ -17,10 +17,10 @@ if (isset($_POST['send'])) {
         $res = mysqli_query($conn, $query);
 
         if ($res) {
-            ses_msg("success", "<span class='mdi mdi-check'></span> Cuenta creada con exito.");
+            ses_msg("success", "<span class='mdi mdi-check'></span> Cuenta creada con éxito.");
             header('Location: /csm/page/login.php');
         } else {
-            ses_msg("danger", "<span class='mdi mdi-alert'></span> Este correo ya esta registrado.");
+            ses_msg("danger", "<span class='mdi mdi-alert'></span> Este correo ya está registrado.");
             header('Location: /csm/page/signup.php');
         }
     } else {

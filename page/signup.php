@@ -10,7 +10,7 @@ require "../include/db.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Document</title>
+  <title>Registrarse - CSM</title>
 
   <!-- Bootstrap 4.4.1 CDN -->
   <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
@@ -42,7 +42,7 @@ require "../include/db.php";
           <!-- Contenido -->
           <div class="col">
             <img class="img-fluid" src="../assets/logo.png" alt="logo">
-            <h3><span class="mdi mdi-clipboard-account"></span> Regístrate</h3>
+            <h3><span class="mdi mdi-clipboard-account"></span> Registrarse</h3>
             <br>
 
             <?php if (isset($_SESSION['msg_type'])) {
@@ -70,7 +70,7 @@ require "../include/db.php";
 
               <div class="form-row">
                 <div class="form-group col">
-                  <button name="send" class="btn btn-success btn-lg btn-block" type="submit">Registrarse</button>
+                  <button name="send" class="btn btn-success btn-lg btn-block shadow" type="submit">Crear cuenta</button>
                 </div>
               </div>
             </form>
