@@ -85,17 +85,17 @@ require "./tools/verify.php";
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
     <div class="card">
-        <img src="https://media.discordapp.net/attachments/591429909952331788/662426893689290792/Imagen7.jpg" style="width:100%">
+        <img src="https://cdn.discordapp.com/attachments/591429909952331788/664154427871199233/catalogo.jpg" style="width:100%">
         <div class="card-body">
             <h5 class="card-title">Catálogo USM</h5>
-            <p class="card-text">Acá esta el catálogo en línea de las bilbiotecas de la universidad.</p>
+            <p class="card-text">Acá esta el catálogo en línea de las bilbiotecas de la universidad. Recuerda renovar los libros o devolverlos a tiempo.</p>
             <a href="https://catalogo.usm.cl/" class="btn btn-primary w-100">Ir</a>
         </div>
     </div>
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
     <div class="card">
-        <img src="https://media.discordapp.net/attachments/591429909952331788/662426893689290792/Imagen7.jpg" style="width:100%">
+        <img src="https://cdn.discordapp.com/attachments/566820022429810731/664187894222553107/salas.jpg" style="width:100%">
         <div class="card-body">
             <h5 class="card-title">Reserva de salas Biblioteca USM</h5>
             <p class="card-text">Aquí puedes reservar salas de estudio para ti y tus compañeros.</p>
@@ -105,17 +105,17 @@ require "./tools/verify.php";
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
     <div class="card">
-        <img src="https://media.discordapp.net/attachments/591429909952331788/662426893689290792/Imagen7.jpg" style="width:100%">
+        <img src="https://cdn.discordapp.com/attachments/591429909952331788/664191453706190868/smoj.jpg" style="width:100%">
         <div class="card-body">
             <h5 class="card-title">SMOJ</h5>
-            <p class="card-text">Si eres informatico, aqui puedes practicar Python.</p>
+            <p class="card-text">Si eres informatico, aqui puedes practicar Python. Y si no, por si te toca IWI131.</p>
             <a href="https://smoj.inf.utfsm.cl/" class="btn btn-primary w-100">Ir</a>
         </div>
     </div>
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
     <div class="card">
-        <img src="https://media.discordapp.net/attachments/591429909952331788/662426893689290792/Imagen7.jpg" style="width:100%">
+        <img src="https://cdn.discordapp.com/attachments/591429909952331788/664196834490581031/beca.jpg" style="width:100%">
         <div class="card-body">
             <h5 class="card-title">Direccion de Relaciones Estudiantiles</h5>
             <p class="card-text">Las becaaaaaaaas.</p>
