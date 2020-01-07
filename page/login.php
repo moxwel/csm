@@ -3,8 +3,10 @@ session_start();
 require "../include/db.php";
 
 // Si ya esta logueado, ir directamente al inicio
-if (isset($_SESSION['loged']) and $_SESSION['loged']){
-  header('Location: /csm/page/home.php');
+if (isset($_SESSION['loged']) and $_SESSION['loged']) {
+    ses_msg("info", "<span class='mdi mdi-information'></span> Ya tienes la sesion iniciada.");
+    header('Location: /csm/page/home.php');
+    die();
 }
 ?>
 

@@ -23,6 +23,7 @@ if (isset($_POST['send'])) {
         if (password_verify($pass, $pwd)) {
             $_SESSION['loged'] = True;
             $_SESSION['email'] = $email;
+            ses_msg("success", "<span class='mdi mdi-check'></span> Bienvenido de vuelta.");
             header('Location: /csm/page/home.php');
         } else {
             ses_msg("danger", "<span class='mdi mdi-alert'></span> Credenciales incorrectas.");

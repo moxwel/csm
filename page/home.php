@@ -28,6 +28,20 @@ require "./tools/verify.php";
 
 <?php require "../include/navbar.php" ?>
 
+<?php if (isset($_SESSION['msg_type'])) {
+  // Muestra un mensaje solo si se ha definido uno antes ?>
+  <div class="row">
+    <div class="col-12">
+        <div class="alert alert-<?php echo $_SESSION['msg_type'] ?> alert-dismissible fade show text-center" role="alert">
+        <?php echo $_SESSION['msg'] ?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+<?php unset($_SESSION['msg_type']); unset($_SESSION['msg']); } ?>
+
 <div class="row p-4 m-4 p-sm-4 m-sm-4 p-md-5 m-md-5">
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
     <div class="card">
@@ -66,6 +80,46 @@ require "./tools/verify.php";
             <h5 class="card-title">Pasaporte USM</h5>
             <p class="card-text">Acá consigues la cuenta, correo usm, correo sansano, contraseña, y cambios de contraseña.</p>
             <a href="https://pasaporte.usm.cl" class="btn btn-primary w-100">Ir</a>
+        </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-6 col-lg-3 p-3">
+    <div class="card">
+        <img src="https://media.discordapp.net/attachments/591429909952331788/662426893689290792/Imagen7.jpg" style="width:100%">
+        <div class="card-body">
+            <h5 class="card-title">Catálogo USM</h5>
+            <p class="card-text">Acá esta el catálogo en línea de las bilbiotecas de la universidad.</p>
+            <a href="https://catalogo.usm.cl/" class="btn btn-primary w-100">Ir</a>
+        </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-6 col-lg-3 p-3">
+    <div class="card">
+        <img src="https://media.discordapp.net/attachments/591429909952331788/662426893689290792/Imagen7.jpg" style="width:100%">
+        <div class="card-body">
+            <h5 class="card-title">Reserva de salas Biblioteca USM</h5>
+            <p class="card-text">Aquí puedes reservar salas de estudio para ti y tus compañeros.</p>
+            <a href="https://usm-chile.libcal.com/spaces?lid=4352" class="btn btn-primary w-100">Ir</a>
+        </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-6 col-lg-3 p-3">
+    <div class="card">
+        <img src="https://media.discordapp.net/attachments/591429909952331788/662426893689290792/Imagen7.jpg" style="width:100%">
+        <div class="card-body">
+            <h5 class="card-title">SMOJ</h5>
+            <p class="card-text">Si eres informatico, aqui puedes practicar Python.</p>
+            <a href="https://smoj.inf.utfsm.cl/" class="btn btn-primary w-100">Ir</a>
+        </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-6 col-lg-3 p-3">
+    <div class="card">
+        <img src="https://media.discordapp.net/attachments/591429909952331788/662426893689290792/Imagen7.jpg" style="width:100%">
+        <div class="card-body">
+            <h5 class="card-title">Direccion de Relaciones Estudiantiles</h5>
+            <p class="card-text">Las becaaaaaaaas.</p>
+            <a href="https://www.rree.usm.cl/" class="btn btn-primary w-100">Ir</a>
         </div>
     </div>
   </div>
