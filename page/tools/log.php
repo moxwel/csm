@@ -21,13 +21,13 @@ if (isset($_POST['send'])) {
         $pwd = $fila['pass'];
 
         if (password_verify($pass, $pwd)) {
-            echo "Acceso con exito. Tu ID es: '$id'";
+            echo "Acceso con éxito. Tu ID es: '$id'";
         } else {
             ses_msg("danger", "<span class='mdi mdi-alert'></span> Credenciales incorrectas.");
             header('Location: /csm/page/login.php');
         }
     } else {
-        ses_msg("danger", "<span class='mdi mdi-alert'></span> Credenciales incorrectos.");
+        ses_msg("danger", "<span class='mdi mdi-alert'></span> Credenciales incorrectas.");
         header('Location: /csm/page/login.php');
     }
 } else {

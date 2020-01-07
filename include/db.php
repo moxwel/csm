@@ -1,6 +1,6 @@
 <?php
 
-require "tools.php";
+require "funcs.php";
 
 // Crear conexion
 $conn = mysqli_connect('localhost', 'root', '');
