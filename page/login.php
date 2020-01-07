@@ -41,7 +41,7 @@ require "../include/db.php";
 
           <!-- Centro -->
           <div class="col">
-            <img class="img-fluid" src="../assets/logo.png" alt="logo">
+            <img class="img-fluid" src="/csm/assets/logospace.png" alt="logo">
             <h3><span class="mdi mdi-login"></span> Iniciar sesión</h3>
             <br>
 

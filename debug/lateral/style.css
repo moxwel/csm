@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#barra {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #E02900;
+    left:-200px;
+    transition: all 500ms linear;
+
+}
+#barra.active{
+    left: 0px;
+}
+#barra ul li{
+    color: rgba(230,230,230,.9);
+    text-align: center;
+    padding: 15px 10px;
+    list-style: none;
+    border-bottom: 1px solid rgba(100,100,100,.3) ;
+}
+#barra .icon{
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor: pointer;
+}
+#barra .icon span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+}
