@@ -21,7 +21,9 @@ if (isset($_POST['send'])) {
         $pwd = $fila['pass'];
 
         if (password_verify($pass, $pwd)) {
-            echo "Acceso con éxito. Tu ID es: '$id'";
+            $_SESSION['loged'] = True;
+            $_SESSION['email'] = $email;
+            header('Location: /csm/page/home.php');
         } else {
             ses_msg("danger", "<span class='mdi mdi-alert'></span> Credenciales incorrectas.");
             header('Location: /csm/page/login.php');
