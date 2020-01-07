@@ -82,6 +82,7 @@ require "../include/db.php";
             <hr>
             <p class="small text-center">¿No tienes cuenta? <a href="signup.php">Regístrate</a></p>
           </div>
+          <!-- FIN CONTENIDO -->
 
           <!-- Margen derecho -->
           <div class="col-sm-0 col-md-1 col-xl-2 d-none d-sm-block"></div>
