@@ -53,14 +53,17 @@ if (isset($_SESSION['loged']) and $_SESSION['loged']) {
             <br>
 
             <?php if (isset($_SESSION['msg_type'])) {
-              // Muestra un mensaje solo si se ha definido uno antes ?>
-              <div class="alert alert-<?php echo $_SESSION['msg_type'] ?> alert-dismissible fade show" role="alert">
-                <?php echo $_SESSION['msg'] ?>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-            <?php unset($_SESSION['msg_type']); unset($_SESSION['msg']); } ?>
+                // Muestra un mensaje solo si se ha definido uno antes ?>
+                <div class="alert alert-<?php echo $_SESSION['msg_type'] ?> alert-dismissible fade show" role="alert">
+                  <?php echo $_SESSION['msg'] ?>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <?php
+                unset($_SESSION['msg_type']);
+                unset($_SESSION['msg']);
+            } ?>
 
             <form action="./tools/log.php" method="post">
               <div class="form-group">

@@ -29,18 +29,21 @@ require "./tools/verify.php";
 <?php require "../include/navbar.php" ?>
 
 <?php if (isset($_SESSION['msg_type'])) {
-  // Muestra un mensaje solo si se ha definido uno antes ?>
-  <div class="row">
-    <div class="col-12">
-        <div class="alert alert-<?php echo $_SESSION['msg_type'] ?> alert-dismissible fade show text-center" role="alert">
-        <?php echo $_SESSION['msg'] ?>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    // Muestra un mensaje solo si se ha definido uno antes ?>
+    <div class="row">
+      <div class="col-12">
+          <div class="alert alert-<?php echo $_SESSION['msg_type'] ?> alert-dismissible fade show text-center" role="alert">
+          <?php echo $_SESSION['msg'] ?>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-<?php unset($_SESSION['msg_type']); unset($_SESSION['msg']); } ?>
+    <?php
+    unset($_SESSION['msg_type']);
+    unset($_SESSION['msg']);
+} ?>
 
 <div class="row p-4 m-4 p-sm-4 m-sm-4 p-md-5 m-md-5">
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">

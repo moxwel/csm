@@ -3,7 +3,7 @@ session_start();
 require "../include/db.php";
 
 // Si ya esta logueado, ir directamente al inicio
-if (isset($_SESSION['loged']) and $_SESSION['loged']){
+if (isset($_SESSION['loged']) and $_SESSION['loged']) {
     ses_msg("info", "<span class='mdi mdi-information'></span> Ya tienes la sesion iniciada.");
     header('Location: /csm/page/home.php');
     die();
@@ -53,14 +53,17 @@ if (isset($_SESSION['loged']) and $_SESSION['loged']){
             <br>
 
             <?php if (isset($_SESSION['msg_type'])) {
-              // Muestra un mensaje solo si se ha definido uno antes ?>
-              <div class="alert alert-<?php echo $_SESSION['msg_type'] ?> alert-dismissible fade show" role="alert">
-                <?php echo $_SESSION['msg'] ?>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-            <?php unset($_SESSION['msg_type']); unset($_SESSION['msg']); } ?>
+                // Muestra un mensaje solo si se ha definido uno antes ?>
+                <div class="alert alert-<?php echo $_SESSION['msg_type'] ?> alert-dismissible fade show" role="alert">
+                  <?php echo $_SESSION['msg'] ?>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <?php
+                unset($_SESSION['msg_type']);
+                unset($_SESSION['msg']);
+            } ?>
 
             <form action="./tools/add.php" method="post">
               <div class="form-group">

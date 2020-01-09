@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 require "../../include/db.php";
 
@@ -21,7 +20,7 @@ if (isset($_POST['send'])) {
         $pwd = $fila['pass'];
 
         if (password_verify($pass, $pwd)) {
-            $_SESSION['loged'] = True;
+            $_SESSION['loged'] = true;
             $_SESSION['email'] = $email;
             ses_msg("success", "<span class='mdi mdi-check'></span> Bienvenido de vuelta.");
             header('Location: /csm/page/home.php');
