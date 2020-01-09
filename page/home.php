@@ -45,7 +45,7 @@ require "./tools/verify.php";
 <div class="row p-4 m-4 p-sm-4 m-sm-4 p-md-5 m-md-5">
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
     <div class="card">
-        <img src="https://www.cursowpress.com/wp-content/uploads/2018/11/integrar-Moodle-y-WordPress.png" style="width:100%">
+        <img src="/csm/assets/home/mod.png" style="width:100%">
         <div class="card-body">
             <h5 class="card-title">Aulas USM</h5>
             <p class="card-text">Hay clases, certámenes, guías, salas, se supone que hay notas pero no xd</p>
@@ -55,7 +55,7 @@ require "./tools/verify.php";
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
   <div class="card">
-  <img src="https://media.discordapp.net/attachments/574394121603776512/650072157858299934/unknown.png" style="width:100%">
+  <img src="/csm/assets/home/pago.png" style="width:100%">
         <div class="card-body">
             <h5 class="card-title">Portal de pagos</h5>
             <p class="card-text">5 de cada mes uwu</p>
@@ -65,7 +65,7 @@ require "./tools/verify.php";
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
     <div class="card">
-        <img src="https://media.discordapp.net/attachments/591429909952331788/650076269311950886/Imagen3.jpg" style="width:100%">
+        <img src="/csm/assets/home/siga.png" style="width:100%">
         <div class="card-body">
             <h5 class="card-title">SIGA</h5>
             <p class="card-text">¿Quieres sacarte el servicio? ¿Quieres encontrar algún documento? ¿Quieres conocer tu horario? Suerte, es por acá.</p>
@@ -75,7 +75,7 @@ require "./tools/verify.php";
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
     <div class="card">
-        <img src="https://media.discordapp.net/attachments/591429909952331788/662426893689290792/Imagen7.jpg" style="width:100%">
+        <img src="/csm/assets/home/pas.png" style="width:100%">
         <div class="card-body">
             <h5 class="card-title">Pasaporte USM</h5>
             <p class="card-text">Acá consigues la cuenta, correo usm, correo sansano, contraseña, y cambios de contraseña.</p>
@@ -85,7 +85,7 @@ require "./tools/verify.php";
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
     <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/591429909952331788/664154427871199233/catalogo.jpg" style="width:100%">
+        <img src="/csm/assets/home/cat.png" style="width:100%">
         <div class="card-body">
             <h5 class="card-title">Catálogo USM</h5>
             <p class="card-text">Acá esta el catálogo en línea de las bilbiotecas de la universidad. Recuerda renovar los libros o devolverlos a tiempo.</p>
@@ -95,7 +95,7 @@ require "./tools/verify.php";
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
     <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/566820022429810731/664187894222553107/salas.jpg" style="width:100%">
+        <img src="/csm/assets/home/sala.png" style="width:100%">
         <div class="card-body">
             <h5 class="card-title">Reserva de salas Biblioteca USM</h5>
             <p class="card-text">Aquí puedes reservar salas de estudio para ti y tus compañeros.</p>
@@ -105,7 +105,7 @@ require "./tools/verify.php";
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
     <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/591429909952331788/664191453706190868/smoj.jpg" style="width:100%">
+        <img src="/csm/assets/home/smoj.png" style="width:100%">
         <div class="card-body">
             <h5 class="card-title">SMOJ</h5>
             <p class="card-text">Si eres informatico, aqui puedes practicar Python. Y si no, por si te toca IWI131.</p>
@@ -115,7 +115,7 @@ require "./tools/verify.php";
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3 p-3">
     <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/591429909952331788/664196834490581031/beca.jpg" style="width:100%">
+        <img src="/csm/assets/home/beca.png" style="width:100%">
         <div class="card-body">
             <h5 class="card-title">Direccion de Relaciones Estudiantiles</h5>
             <p class="card-text">Las becaaaaaaaas.</p>
