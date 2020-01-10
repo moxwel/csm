@@ -10,7 +10,7 @@
         <a class="nav-link" href="home.php">Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Calendario</a>
+        <a class="nav-link" href="cal.php">Calendario</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Perfil</a>
