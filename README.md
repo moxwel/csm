@@ -7,14 +7,14 @@
 
 # Clonar el repositorio en XAMPP
 
-- Descarga/clona el repositorio desde GitHub Web (como zip) o desde la aplicacion de escritorio. Será una carpeta.
+- Descarga el repositorio desde GitHub Web como ZIP.
 - Ve a la carpeta donde tienes instalado XAMPP.
 - Accede a la carpeta `htdocs`.
-- Copia la carpeta alli.
+- Desde el ZIP, extrae la carpeta `csm-master` allí.
 
 # Acceder a las páginas
 
-En el navegador web, y con el **servidor corriendo** las paginas mas importantes son:
+En el navegador web, y con el **servidor de Apache y MySQL corriendo**, ya puedes acceder a las paginas. Las más importantes son:
 
 - `localhost/csm/` para acceder a la pagina inicial.
 - `localhost/csm/debug/` para acceder a la seccion de pruebas.
