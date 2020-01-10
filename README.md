@@ -1,9 +1,9 @@
-# Organizacion
+# Organización
 
 - Todo lo que sean imagenes y recursos graficos, por favor en la carpeta [assets](./assets/).
 - Si tienes archivos o codigo de prueba, por favor ponerlos en la carpeta [debug](./debug/).
 - Si deseas poner CSS o JavaScript externo, por favor crear una carpeta correspondiente dentro de [include](./include/).
-- Todas las paginas principales estan dentro de [page](./page/), y codigo PHP exclusivo y de utilidad en [tools](./page/tools/)
+- Todas las paginas principales estan dentro de [page](./page/), y codigo PHP exclusivo y de utilidad en [tools](./page/tools/).
 
 # Clonar el repositorio en XAMPP
 
