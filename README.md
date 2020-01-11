@@ -7,10 +7,13 @@
 
 # Clonar el repositorio en XAMPP
 
+- Descarga XAMPP para Windows desde [aquí](https://www.apachefriends.org/es/index.html).
 - Descarga el repositorio desde GitHub Web como ZIP.
-- Ve a la carpeta donde tienes instalado XAMPP.
+- Ve a la carpeta donde tienes instalado XAMPP (por defecto es `C:\xampp`).
 - Accede a la carpeta `htdocs`.
 - Desde el ZIP, extrae la carpeta `csm-master` allí.
+
+> ⚠ Importante: Asegurate primero de importar el [esquema SQL](./debug/users.sql) en phpMyAdmin (accede a `localhost/phpmyadmin/server_import.php`).
 
 # Acceder a las páginas
 
