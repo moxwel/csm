@@ -50,7 +50,7 @@ require "./tools/verify.php";
             <form class="form-inline" method="get">
                 <input type="text" class="form-control mb-3" placeholder="Certamen de..." required>
                 <input class="form-control mb-3" type="date"     name="fecha" required>
-                <button class="btn btn-outline-success ml-4" type="submit"   name="env"   value="IngEv"><span class="mdi mdi-plus"></span> Añadir evento</button>
+                <button class="btn btn-outline-success ml-4" type="submit"   name="env"   value="IngEv"><span class="mdi mdi-calendar-plus"></span> Añadir evento</button>
             </form>
         </div>
 
