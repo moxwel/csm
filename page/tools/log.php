@@ -22,6 +22,7 @@ if (isset($_POST['send'])) {
         if (password_verify($pass, $pwd)) {
             $_SESSION['loged'] = true;
             $_SESSION['email'] = $email;
+            $_SESSION['id'] = $id;
             ses_msg("success", "<span class='mdi mdi-check'></span> Bienvenido de vuelta.");
             header('Location: /csm/page/home.php');
         } else {

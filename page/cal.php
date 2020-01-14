@@ -36,34 +36,48 @@ require "./tools/verify.php";
 
 <div class="container-fluid pt-2" style="height: 90%">
     <div class="row" style="height: 100%">
+
         <div class="col-3 pt-2">
-        <div class="card p-3">
-            <h4>Ingresa una fecha:</h4>
-        <form class="form-inline" method="get">
+            <div class="card">
+                <h4 class="card-header">Mostrar fecha</h4>
+                <div class="card-body">
 
-                <input class="form-control" type="date"     name="fecha" required>
-                <input class="btn btn-primary ml-4" type="submit"   name="env"   value="Ingresar">
-            </form>
+                    <form class="form-inline" method="get">
+                        <input class="form-control" type="date"     name="fecha" required>
+                        <input class="btn btn-primary ml-4" type="submit"   name="env"   value="Ingresar">
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="card mt-5">
+                <h4 class="card-header">Agregar evento</h4>
+                <div class="card-body">
+
+                    <form class="form-inline" method="get">
+                        <input class="form-control" type="date"     name="fecha" required>
+                        <input class="btn btn-primary ml-4" type="submit"   name="env"   value="Ingresar">
+                    </form>
+
+                </div>
+            </div>
         </div>
 
-        </div>
         <div class="col">
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr style="height: 15px; text-align: center">
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sabado</th>
+                        <th>Domingo</th>
+                    </tr>
+                </thead>
 
-
-        <table class="table table-striped table-bordered">
-    <thead class="thead-dark">
-        <tr style="height: 15px; text-align: center">
-            <th>Lunes</th>
-            <th>Martes</th>
-            <th>Miercoles</th>
-            <th>Jueves</th>
-            <th>Viernes</th>
-            <th>Sabado</th>
-            <th>Domingo</th>
-        </tr>
-    </thead>
-
-    <tr>
+                <tr>
 <?php
 if (isset($_GET['fecha'])) {
     $fecha = explode("-", $_GET['fecha']); // 0=año, 1=mes, 2=dia
@@ -106,16 +120,11 @@ if (isset($_GET['fecha'])) {
     }
 }
 ?>
-    </tr>
-</table>
+                </tr>
+            </table>
         </div>
     </div>
-    </div>
-
-
-
-
-
+</div>
 
 </body>
 </html>
