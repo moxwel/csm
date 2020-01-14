@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-               .box{ border:1px solid black;
+.box{ border:1px solid black;
 
 width:49.5%;
 
@@ -47,7 +47,15 @@ background-color:red;
             -ms-user-select: none;
             user-select: none;
           }
-          
+           /*scroll bar*/
+           .my-custom-scrollbar {
+            position: relative;
+            height: 200px;
+            overflow: auto;
+            }
+            .table-wrapper-scroll-y {
+            display: block;
+            }
           /* Set all odd list items to a different color (zebra-stripes) */
           ul li:nth-child(odd) {
             background: #f9f9f9;
@@ -145,7 +153,7 @@ background-color:red;
      <input type="text" id="myInput" placeholder="Title...">
      <span onclick="newElement()" class="addBtn">Agregar</span>
      </div>
-
+     <div class="table-wrapper-scroll-y my-custom-scrollbar">
      <ul id="myUL">
      <li>Ser mejor persona</li>
      <li class="checked">Llegar a challenger en el paro</li>
@@ -154,6 +162,7 @@ background-color:red;
      <li>Hacer algo productivo con mi vida</li>
      <li>Dormir 10 minutos</li>
      </ul>
+    </div>
 </div>
 
 <script>
