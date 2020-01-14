@@ -38,14 +38,22 @@ require "./tools/verify.php";
     <div class="row" style="height: 100%">
 
         <div class="col-3 pt-2">
-            <div class="card">
-                <h4 class="card-header">Mostrar fecha</h4>
-                <div class="card-body">
+        <div class="card p-3">
+            <h4>Ingresa una fecha:</h4>
+            <form class="form-inline" method="get">
 
-                    <form class="form-inline" method="get">
-                        <input class="form-control" type="date"     name="fecha" required>
-                        <input class="btn btn-primary ml-4" type="submit"   name="env"   value="Ingresar">
-                    </form>
+                <input class="form-control" type="date"     name="fecha" required>
+                <input class="btn btn-primary ml-4" type="submit"   name="env"   value="Ingresar">
+            </form>
+        </div>
+        <div class="card p-3 mt-3">
+            <h4>Añadir evento:</h4>
+            <form class="form-inline" method="get">
+                <input type="text" class="form-control mb-3" placeholder="Certamen de..." required>
+                <input class="form-control mb-3" type="date"     name="fecha" required>
+                <button class="btn btn-outline-success ml-4" type="submit"   name="env"   value="IngEv"><span class="mdi mdi-calendar-plus"></span> Añadir evento</button>
+            </form>
+        </div>
 
                 </div>
 

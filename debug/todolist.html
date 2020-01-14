@@ -2,8 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 4.4.1 CDN -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+    <!-- Material Design Icons CDN -->
+    <link rel='stylesheet' href='//cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css'>
 <style>
-               .box{ border:1px solid black;
+.box{ border:1px solid black;
 
 width:49.5%;
 
@@ -11,7 +15,7 @@ display:inline-block;
 
 height:49.5%;
 
-background-color:red;
+background-color:#003cff;
 
 }
           body {
@@ -47,21 +51,29 @@ background-color:red;
             -ms-user-select: none;
             user-select: none;
           }
-          
+           /*scroll bar*/
+           .my-custom-scrollbar {
+            position: relative;
+            height: 200px;
+            overflow: auto;
+            }
+            .table-wrapper-scroll-y {
+            display: block;
+            }
           /* Set all odd list items to a different color (zebra-stripes) */
           ul li:nth-child(odd) {
-            background: #f9f9f9;
+            background: #ffffff;
           }
           
           /* Darker background-color on hover */
           ul li:hover {
-            background: #ddd;
+            background: #ffffff;
           }
           
           /* When clicked on, add a background color and strike out text */
           ul li.checked {
             background: #888;
-            color: #fff;
+            color: #ffffff;
             text-decoration: line-through;
           }
           
@@ -69,7 +81,7 @@ background-color:red;
           ul li.checked::before {
             content: '';
             position: absolute;
-            border-color: #fff;
+            border-color: #ffffff;
             border-style: solid;
             border-width: 0 2px 2px 0;
             top: 10px;
@@ -88,15 +100,15 @@ background-color:red;
           }
           
           .close:hover {
-            background-color: #000050;
-            color: white;
+            background-color: #003cff;
+            color: #ffffff;
           }
           
           /* Style the header */
           .header {
-            background-color: #000050;
+            background-color: #003cff;
             padding: 30px 40px;
-            color: white;
+            color: #ffffff;
             text-align: center;
           }
           
@@ -118,34 +130,20 @@ background-color:red;
             font-size: 16px;
           }
           
-          /* Style the "Add" button */
-          .addBtn {
-            padding: 10px;
-            width: 25%;
-            background: #d9d9d9;
-            color: #555;
-            float: left;
-            text-align: center;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-            border-radius: 0;
-          }
-          
           .addBtn:hover {
             background-color: #bbb;
           }
-
           </style>
 </head>
 <body>
 <div class = "box">
      <div id="myDIV" class="header">
      <h2 style="margin:5px">Cosas que hacer</h2>
-     <input type="text" id="myInput" placeholder="Title...">
-     <span onclick="newElement()" class="addBtn">Agregar</span>
-     </div>
-
+     <form class="form-inline" method="get">
+      <input type="text" class="form-control mb-3" placeholder="Escribe aquí..." required>
+      <button onclick="newElement()" class="btn btn-primary ml-4" ><span class="mdi-arrow-down-bold-box-outline"></span> Agregar</button>
+    </div>
+     <div class="table-wrapper-scroll-y my-custom-scrollbar">
      <ul id="myUL">
      <li>Ser mejor persona</li>
      <li class="checked">Llegar a challenger en el paro</li>
@@ -154,6 +152,7 @@ background-color:red;
      <li>Hacer algo productivo con mi vida</li>
      <li>Dormir 10 minutos</li>
      </ul>
+    </div>
 </div>
 
 <script>

@@ -52,7 +52,7 @@ require "./tools/verify.php";
         <div class="card-body">
             <h5 class="card-title">Aulas USM</h5>
             <p class="card-text">Hay clases, certámenes, guías, salas, se supone que hay notas pero no xd</p>
-            <a href="https://aula.usm.cl" class="btn btn-primary w-100">Ir</a>
+            <a href="https://aula.usm.cl" target="_blank" class="btn btn-primary w-100">Ir</a>
         </div>
     </div>
   </div>
@@ -62,7 +62,7 @@ require "./tools/verify.php";
         <div class="card-body">
             <h5 class="card-title">Portal de pagos</h5>
             <p class="card-text">5 de cada mes uwu</p>
-            <a href="https://portalpagos.usm.cl" class="btn btn-primary w-100">Ir</a>
+            <a href="https://portalpagos.usm.cl" target="_blank" class="btn btn-primary w-100">Ir</a>
         </div>
     </div>
   </div>
@@ -72,7 +72,7 @@ require "./tools/verify.php";
         <div class="card-body">
             <h5 class="card-title">SIGA</h5>
             <p class="card-text">¿Quieres sacarte el servicio? ¿Quieres encontrar algún documento? ¿Quieres conocer tu horario? Suerte, es por acá.</p>
-            <a href="https://siga.usm.cl" class="btn btn-primary w-100">Ir</a>
+            <a href="https://siga.usm.cl" target="_blank" class="btn btn-primary w-100">Ir</a>
         </div>
     </div>
   </div>
@@ -82,7 +82,7 @@ require "./tools/verify.php";
         <div class="card-body">
             <h5 class="card-title">Pasaporte USM</h5>
             <p class="card-text">Acá consigues la cuenta, correo usm, correo sansano, contraseña, y cambios de contraseña.</p>
-            <a href="https://pasaporte.usm.cl" class="btn btn-primary w-100">Ir</a>
+            <a href="https://pasaporte.usm.cl" target="_blank" class="btn btn-primary w-100">Ir</a>
         </div>
     </div>
   </div>
@@ -92,7 +92,7 @@ require "./tools/verify.php";
         <div class="card-body">
             <h5 class="card-title">Catálogo USM</h5>
             <p class="card-text">Acá esta el catálogo en línea de las bilbiotecas de la universidad. Recuerda renovar los libros o devolverlos a tiempo.</p>
-            <a href="https://catalogo.usm.cl/" class="btn btn-primary w-100">Ir</a>
+            <a href="https://catalogo.usm.cl/" target="_blank" class="btn btn-primary w-100">Ir</a>
         </div>
     </div>
   </div>
@@ -102,7 +102,7 @@ require "./tools/verify.php";
         <div class="card-body">
             <h5 class="card-title">Reserva de salas Biblioteca USM</h5>
             <p class="card-text">Aquí puedes reservar salas de estudio para ti y tus compañeros.</p>
-            <a href="https://usm-chile.libcal.com/spaces?lid=4352" class="btn btn-primary w-100">Ir</a>
+            <a href="https://usm-chile.libcal.com/spaces?lid=4352" target="_blank" class="btn btn-primary w-100">Ir</a>
         </div>
     </div>
   </div>
@@ -112,7 +112,7 @@ require "./tools/verify.php";
         <div class="card-body">
             <h5 class="card-title">SMOJ</h5>
             <p class="card-text">Si eres informatico, aqui puedes practicar Python. Y si no, por si te toca IWI131.</p>
-            <a href="https://smoj.inf.utfsm.cl/" class="btn btn-primary w-100">Ir</a>
+            <a href="https://smoj.inf.utfsm.cl/" target="_blank" class="btn btn-primary w-100">Ir</a>
         </div>
     </div>
   </div>
@@ -122,7 +122,7 @@ require "./tools/verify.php";
         <div class="card-body">
             <h5 class="card-title">Direccion de Relaciones Estudiantiles</h5>
             <p class="card-text">Las becaaaaaaaas.</p>
-            <a href="https://www.rree.usm.cl/" class="btn btn-primary w-100">Ir</a>
+            <a href="https://www.rree.usm.cl/" target="_blank" class="btn btn-primary w-100">Ir</a>
         </div>
     </div>
   </div>
