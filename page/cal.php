@@ -55,20 +55,6 @@ require "./tools/verify.php";
             </form>
         </div>
 
-                </div>
-
-            </div>
-            <div class="card mt-5">
-                <h4 class="card-header">Agregar evento</h4>
-                <div class="card-body">
-
-                    <form class="form-inline" method="get">
-                        <input class="form-control" type="date"     name="fecha" required>
-                        <input class="btn btn-primary ml-4" type="submit"   name="env"   value="Ingresar">
-                    </form>
-
-                </div>
-            </div>
         </div>
 
         <div class="col">
